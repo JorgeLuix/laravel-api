@@ -57,7 +57,7 @@ class ProjectController extends Controller
         $data['user_id'] = Auth::id();
         if ($request->hasFile('image')) {
             $image_path = Storage::put('uploads', $request->image);
-            $data['image'] = $image_path;
+            $data['image'] = asset('storage/' . $image_path);
         }
 
         $project = Project::create($data);
