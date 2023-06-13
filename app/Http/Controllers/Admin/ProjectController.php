@@ -116,7 +116,7 @@ class ProjectController extends Controller
                 Storage::delete($project->image);
             }
             $image_path = Storage::put('uploads', $request->image);
-            $data['image'] = $image_path;
+            $data['image'] = asset('storage/' . $image_path);
         }
         $project->update($data);
         if ($request->has('types')) {
