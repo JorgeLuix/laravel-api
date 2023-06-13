@@ -1,0 +1,58 @@
+@use './partials/variables' as *;
+
+$fa-font-path: "../fonts/webfonts" !default;
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./partials/_navHeader.scss";
+@import "./partials/_sidebar.scss";
+@import "./partials/index.scss";
+
+:root {
+    --main-bg-color: #009d63;
+    --main-text-color: #009d63;
+    --second-text-color: #bbbec5;
+    --second-bg-color: #c1efde;
+    --colorBlue: #131661;
+    --colorWhite: #FFFFFF;
+    --lightgreen: #00B67A;
+    --colorBlack: #000000;
+    --secondaryBlue: #090E38;
+    --color-cards: #232B5C;
+  }
+
+  .logo-jc {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    padding: 15px
+  }
+
+// header video {
+//     left: 50%;
+//     min-height: 100%;
+//     min-width: 100%;
+//     opacity: .2;
+//     position: absolute;
+//     top: 50%;
+//     transform: translate(-50%,-50%);
+// }
+//skillsets//
+.even-section{
+    background-color: var(--main-bg-color);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+//btn
+.btn-shadow{
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px ;
+}
+
+.bg-table{
+    background-color: var(--lightgreen);
+}
