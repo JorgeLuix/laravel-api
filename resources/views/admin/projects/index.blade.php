@@ -13,6 +13,7 @@
                 </div>
 
                 <div class="">
+                    <a class="btn btn-success" href="http://localhost:5173/"> Go to Portfolio</a>
                     <a class="btn btn-success" href="{{ route('admin.projects.create') }}">Create new project</a>
                 </div>
 

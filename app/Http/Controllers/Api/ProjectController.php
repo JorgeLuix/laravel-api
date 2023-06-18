@@ -46,4 +46,21 @@ class ProjectController extends Controller
 
     }
 
+    public function showcase() {
+        $projects = Project::where('featured', '1')->get();
+
+        if (!$projects) {
+            return response()->json([
+                'success' => false,
+                'results' => 'Nothing in showcase'
+            ]);
+    }
+    else {
+        return response()->json([
+            'success' => 'true',
+            'results' => $projects
+        ]);
+    }
+    }
+
 }

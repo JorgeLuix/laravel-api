@@ -22,6 +22,9 @@ class ProjectSeeder extends Seeder
             $newProject->name = $project['name'];
             $newProject->slug = Str::slug($project['name'], '-');
             $newProject->image = $project['image'];
+            if (array_key_exists('featured', $project)) {
+                $newProject->featured = 1;
+                }
             $newProject->description = $project['description'];
             $newProject->repository_url = $project['repository_url'];
             $newProject->save();
