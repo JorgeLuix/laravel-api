@@ -30,7 +30,7 @@
                     <div class="col-md-3">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <div>
-                                <p class="fs-5">Actions</p>
+                                <p class="fs-5 ">Actions</p>
                             </div>
                             <i class="fa-regular fa-circle-play fs-1 primary-text border rounded-full secondary-bg p-3"></i>
                         </div>
